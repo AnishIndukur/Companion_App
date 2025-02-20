@@ -116,7 +116,6 @@ if prompt := st.chat_input("What's on your mind?"):
                     for m in st.session_state.messages
                 ],
                 temperature=st.session_state.settings["temperature"],
-                max_tokens=st.session_state.settings["max_tokens"],
                 stream=st.session_state.settings["stream"]
             )
 
