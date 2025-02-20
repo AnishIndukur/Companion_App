@@ -51,7 +51,7 @@ Identifying Barriers
 # Initialize settings in session state if they don't exist
 if "settings" not in st.session_state:
     st.session_state.settings = {
-        "model": "gpt-4o-mini",
+        "model": "o3-mini",
         "temperature": 0.7,
         "max_tokens": 1000,
         "stream": True,
@@ -70,7 +70,7 @@ with col1:
     # Model selection
     model = st.selectbox(
         "Choose GPT Model",
-        ["gpt-4o-mini", "gpt-4o"],
+        ["gpt-4o-mini", "gpt-4o", "o3-mini", "o1"],
         index=0 if st.session_state.settings["model"] == "gpt-4o-mini" else 1,
         help="Select which OpenAI model to use for chat responses."
     )
@@ -133,6 +133,8 @@ with st.expander("ℹ️ About these settings"):
     - **GPT Model**: Choose between different OpenAI models:
         - GPT-4o-mini: Faster and more cost-effective
         - GPT-4o: More capable but slower and more expensive
+        - GPT-o3-mini: Lightweight thinking model
+        - GPT-o1: Large scale thinking model
     
     - **Temperature**: Controls randomness in responses:
         - 0.0: Focused and deterministic
