@@ -115,7 +115,6 @@ if prompt := st.chat_input("What's on your mind?"):
                     {"role": m["role"], "content": m["content"]}
                     for m in st.session_state.messages
                 ],
-                temperature=st.session_state.settings["temperature"],
                 stream=st.session_state.settings["stream"]
             )
 
