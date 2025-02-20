@@ -22,11 +22,10 @@ if "conversation_history" not in st.session_state:
 # Initialize settings in session state if they don't exist
 if "settings" not in st.session_state:
     st.session_state.settings = {
-        "model": "gpt-4o-mini",
+        "model": "o3-mini",
         "temperature": 0.7,
-        "max_tokens": 1000,
         "stream": True,
-        "system_prompt": "You are a helpful, harmless, and honest AI assistant."
+        "system_prompt": "You are a helpful, AI assistant."
     }
 
 # Main app header
