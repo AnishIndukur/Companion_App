@@ -74,7 +74,6 @@ with st.sidebar:
     st.markdown("### Current Settings")
     st.markdown(f"**Model:** {st.session_state.settings['model']}")
     st.markdown(f"**Temperature:** {st.session_state.settings['temperature']}")
-    st.markdown(f"**Max Tokens:** {st.session_state.settings['max_tokens']}")
     
     # Link to settings page
     st.divider()
