@@ -46,15 +46,6 @@ with col1:
         help="Higher values make the output more random, lower values make it more focused and deterministic."
     )
     
-    # Max tokens slider
-    max_tokens = st.slider(
-        "Max Tokens",
-        min_value=100,
-        max_value=4000,
-        value=st.session_state.settings["max_tokens"],
-        step=100,
-        help="Maximum number of tokens to generate in the response."
-    )
 
 with col2:
     st.header("Response Settings")
@@ -101,10 +92,6 @@ with st.expander("ℹ️ About these settings"):
         - 0.0: Focused and deterministic
         - 1.0: Balanced creativity
         - 2.0: Maximum creativity
-    
-    - **Max Tokens**: Limits response length:
-        - Lower values: Shorter, more concise responses
-        - Higher values: Longer, more detailed responses
     
     ### Response Settings
     
