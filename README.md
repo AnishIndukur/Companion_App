@@ -44,7 +44,7 @@ Before running the application, you need:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/AnishIndukur/Companion_App.git
    cd Companion_App
    ```
 
